@@ -9,7 +9,11 @@ let key = '';
 const game = {
     setWord: function(param) {
         word = words[Math.floor(Math.random() *10)];
-        document.
+        let wordBlank = "_";
+        for (let i = word.length; i > 1; i--) {
+            wordBlank = wordBlank.concat(" _");
+        }
+        document.getElementById("word").innerHTML = wordBlank;
         return word;
     },
     testKeys: function(param1, param2) {
