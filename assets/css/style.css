@@ -1,6 +1,11 @@
 
 /* Main Styles */
 
+h2 {
+    box-sizing: border-box;
+    height: 50px;
+}
+
 #word {
     letter-spacing: 5px;
 }

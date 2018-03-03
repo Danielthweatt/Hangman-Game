@@ -60,6 +60,7 @@ const game = {
             }   
             if (wordBlank.toLowerCase() === word) {
                 document.onkeydown = function() {};
+                document.getElementById('secondHeader').innerHTML = wordBlank;
                 wins = wins + 1;
                 document.getElementById('wins').innerHTML = wins;
                 setTimeout(function() {game.playGame()}, 1500)
