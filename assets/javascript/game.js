@@ -9,7 +9,7 @@ const words = [['frodo', './assets/images/Elijah_Wood_as_Frodo_Baggins.png'],
 ['aragorn', './assets/images/Aragorn-in-The-Two-Towers-aragorn-34519327-419-425.jpg'], 
 ['gimli', './assets/images/14573-25242.gif'], 
 ['legolas', './assets/images/Legolas_-_in_Two_Towers.png'], 
-['boromir', './assets/images/cftthfzgjsvnimu97z2w.jpg'], 
+['boromir', './assets/images/857251-boromir6.jpg'], 
 ['sauron', './assets/images/Eye-of-Sauron,-Lord-of-the-Rings,-Return-of-the-King.jpg']];
 let wins = 0;
 let word;
@@ -72,7 +72,7 @@ const game = {
             game.testKeys(word, keyStroke)
             if (triesLeft === 0) {
                 document.onkeydown = function() {};
-                setTimeout(function() {game.playGame()}, 5000)
+                setTimeout(function() {game.playGame()}, 2500)
             }   
             if (wordBlank.toLowerCase() === word) {
                 document.onkeydown = function() {};
@@ -80,7 +80,7 @@ const game = {
                 document.getElementById('img').setAttribute('src', words[randomNumber][1])
                 wins = wins + 1;
                 document.getElementById('wins').innerHTML = wins;
-                setTimeout(function() {game.playGame()}, 5000)
+                setTimeout(function() {game.playGame()}, 2500)
             }
         }
     }
