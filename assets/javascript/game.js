@@ -35,6 +35,7 @@ const game = {
         }
         document.getElementById('secondHeader').innerHTML = '';
         document.getElementById('img').setAttribute('src', '')
+        document.getElementById('img').setAttribute('alt', '')
         document.getElementById('word').innerHTML = wordBlank;
         document.getElementById('triesLeft').innerHTML = triesLeft;
         document.getElementById('lettersGuessed').innerHTML = lettersGuessed;
@@ -78,6 +79,7 @@ const game = {
                 document.onkeydown = function() {};
                 document.getElementById('secondHeader').innerHTML = wordBlank;
                 document.getElementById('img').setAttribute('src', words[randomNumber][1])
+                document.getElementById('img').setAttribute('alt', wordBlank)
                 wins = wins + 1;
                 document.getElementById('wins').innerHTML = wins;
                 setTimeout(function() {game.playGame()}, 2500)
